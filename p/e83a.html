@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- title -->
+
+
+
+
+<!-- keywords -->
+
+
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="Hua">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="Hua">
+    
+    <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
+    
+    <meta name="description" content="">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>HLA in Myasthenia gravis 【稿2】 报告 · Hua的公告板</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s infinite;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+(function( w ){
+	"use strict";
+	// rel=preload support test
+	if( !w.loadCSS ){
+		w.loadCSS = function(){};
+	}
+	// define on the loadCSS obj
+	var rp = loadCSS.relpreload = {};
+	// rel=preload feature support test
+	// runs once and returns a function for compat purposes
+	rp.support = (function(){
+		var ret;
+		try {
+			ret = w.document.createElement( "link" ).relList.supports( "preload" );
+		} catch (e) {
+			ret = false;
+		}
+		return function(){
+			return ret;
+		};
+	})();
+
+	// if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+	// then change that media back to its intended value on load
+	rp.bindMediaToggle = function( link ){
+		// remember existing media attr for ultimate state, or default to 'all'
+		var finalMedia = link.media || "all";
+
+		function enableStylesheet(){
+			link.media = finalMedia;
+		}
+
+		// bind load handlers to enable media
+		if( link.addEventListener ){
+			link.addEventListener( "load", enableStylesheet );
+		} else if( link.attachEvent ){
+			link.attachEvent( "onload", enableStylesheet );
+		}
+
+		// Set rel and non-applicable media type to start an async request
+		// note: timeout allows this to happen async to let rendering continue in IE
+		setTimeout(function(){
+			link.rel = "stylesheet";
+			link.media = "only x";
+		});
+		// also enable media after 3 seconds,
+		// which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+		setTimeout( enableStylesheet, 3000 );
+	};
+
+	// loop through link elements in DOM
+	rp.poly = function(){
+		// double check this to prevent external calls from running
+		if( rp.support() ){
+			return;
+		}
+		var links = w.document.getElementsByTagName( "link" );
+		for( var i = 0; i < links.length; i++ ){
+			var link = links[ i ];
+			// qualify links to those with rel=preload and as=style attrs
+			if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+				// prevent rerunning on link
+				link.setAttribute( "data-loadcss", true );
+				// bind listeners to toggle media back
+				rp.bindMediaToggle( link );
+			}
+		}
+	};
+
+	// if unsupported, run the polyfill
+	if( !rp.support() ){
+		// run once at least
+		rp.poly();
+
+		// rerun poly on an interval until onload
+		var run = w.setInterval( rp.poly, 500 );
+		if( w.addEventListener ){
+			w.addEventListener( "load", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		} else if( w.attachEvent ){
+			w.attachEvent( "onload", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		}
+	}
+
+
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ) );
+</script>
+
+    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" as="script">
+    <link rel="preload" href="/scripts/main.js" as="script">
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin="">
+    <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin="">
+    
+        <!-- algolia -->
+        <script>
+            
+            var hits = JSON.parse('{"per_page":10}')
+            var labels = JSON.parse('{"input_placeholder":"Search for Posts","hits_empty":"We did not find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}')
+
+            var algolia = {
+                applicationID: 'ZKGZPC2HRL',
+                apiKey: 'd14aa6ef670d284260dc375c7e565f5e',
+                indexName: 'hexo_search',
+                hits: hits,
+                labels: labels
+            }
+        </script>
+    
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+</head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/">Hua的公告板</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">HLA in Myasthenia gravis 【稿2】 报告</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href="/">Hua的公告板</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style="
+
+
+
+
+
+
+
+height:50vh;
+">
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(//raw.githubusercontent.com/Cpresident/kooe/master/20190124225700.png)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            HLA in Myasthenia gravis 【稿2】 报告
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">240</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/02/02</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        
+    </div>
+</div>
+        <script>
+ 
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntros = document.getElementsByClassName('post-intros')[0]
+      if (postIntros) {
+        postIntros.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  function asyncErr(){
+    console.warn('script load from CDN failed, will load local script')
+  }
+
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (cb) { o.addEventListener('load', function (e) { cb(null, e); }, false); }
+    if (err) { o.addEventListener('error', function (e) { err(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  var asyncLoadWithFallBack = function(arr, success, reject) {
+      var currReject = function(){
+        reject()
+        arr.shift()
+        if(arr.length)
+          async(arr[0], success, currReject)
+        }
+
+      async(arr[0], success, currReject)
+  }
+
+  asyncLoadWithFallBack([
+    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", 
+    "https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js",
+    "/lib/webfontloader.min.js"
+  ], asyncCb, asyncErr)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<div id="hbe-security">
+  <div class="hbe-input-container">
+  <input type="password" class="hbe-form-control" id="pass" placeholder="Please enter the password to read the blog.">
+    <label for="pass">Please enter the password to read the blog.</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+    </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>Author：<a href="https://cpresident.github.io">Hua</a>
+            </p><p>原文链接：<a href="https://cpresident.github.io/p/e83a.html">https://cpresident.github.io/p/e83a.html</a>
+            </p><p>发表日期：<a href="https://cpresident.github.io/p/e83a.html">February 2nd 2019, 12:00:00 am</a>
+            </p><p>更新日期：<a href="https://cpresident.github.io/p/e83a.html">February 2nd 2019, 11:13:19 pm</a>
+            </p><p>版权声明：</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href="/p/b5c6.html" title="Treg cell的发生发展">
+                    <div class="nextTitle">Treg cell的发生发展</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/p/ac35.html" title="HLA in Myasthenia gravis 【稿1】 报告">
+                    <div class="prevTitle">HLA in Myasthenia gravis 【稿1】 报告</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:xvpresident@gmail.com" class="iconfont-archer email" title="email"></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <a href="//t.me/iiijhh" class="iconfont-archer telegram" target="_blank" title="telegram"></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <a href="/atom.xml" class="iconfont-archer rss" target="_blank" title="rss"></a>
+            
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+    <div class="busuanzi-container">
+    
+     
+    <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span> :)</span>
+    
+    </div>
+    
+</footer>
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 6
+        </div>
+        <!-- search  -->
+        
+            <div class="site-search popup-trigger">
+                <span class="iconfont-archer search-icon">&#xe627;</span>
+            </div>
+        
+    </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2019 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/02</span><a class="archive-post-title" href="/p/2d4a.html">HLA in Myasthenia gravis 【Meta可行性分析】</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/02</span><a class="archive-post-title" href="/p/ac35.html">HLA in Myasthenia gravis 【稿1】 报告</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/02</span><a class="archive-post-title" href="/p/e83a.html">HLA in Myasthenia gravis 【稿2】 报告</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/02</span><a class="archive-post-title" href="/p/b5c6.html">Treg cell的发生发展</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2018 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/31</span><a class="archive-post-title" href="/p/3d25.html">HLA and Myasthenia gravis【R环境下Biblioshiny分析报告】</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/28</span><a class="archive-post-title" href="/p/e9d9.html">BCR is the New Antibody, TCR is still a T Cell Receptor</a>
+        </li>
+    
+    </ul></div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br>
+    1、请确保node版本大于6.2<br>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: "/",
+        author: "Hua"
+    }
+</script>
+    <!-- CDN failover -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ === 'undefined')
+        {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/lib/jquery.min.js">\x3C/script>')
+        }
+    </script>
+    <script src="/scripts/main.js"></script>
+    <!-- algolia -->
+    
+        <div class="site-search">
+  <div class="algolia-popup popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="iconfont-archer">&#xe609;</i>
+    </span>
+  </div>
+</div>
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.0/dist/instantsearch.min.js" defer></script>
+        <script src="/scripts/search.js" defer></script>
+    
+    <!-- busuanzi  -->
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+     
+    </body>
+</html>
+
+
