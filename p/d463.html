@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- title -->
+
+
+
+
+<!-- keywords -->
+
+
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="Hua">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="Hua">
+    
+    <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
+    
+    <meta name="description" content="">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MG相关micro RNA（2019-06-09） · Hua的公告板</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s infinite;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+(function( w ){
+	"use strict";
+	// rel=preload support test
+	if( !w.loadCSS ){
+		w.loadCSS = function(){};
+	}
+	// define on the loadCSS obj
+	var rp = loadCSS.relpreload = {};
+	// rel=preload feature support test
+	// runs once and returns a function for compat purposes
+	rp.support = (function(){
+		var ret;
+		try {
+			ret = w.document.createElement( "link" ).relList.supports( "preload" );
+		} catch (e) {
+			ret = false;
+		}
+		return function(){
+			return ret;
+		};
+	})();
+
+	// if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+	// then change that media back to its intended value on load
+	rp.bindMediaToggle = function( link ){
+		// remember existing media attr for ultimate state, or default to 'all'
+		var finalMedia = link.media || "all";
+
+		function enableStylesheet(){
+			link.media = finalMedia;
+		}
+
+		// bind load handlers to enable media
+		if( link.addEventListener ){
+			link.addEventListener( "load", enableStylesheet );
+		} else if( link.attachEvent ){
+			link.attachEvent( "onload", enableStylesheet );
+		}
+
+		// Set rel and non-applicable media type to start an async request
+		// note: timeout allows this to happen async to let rendering continue in IE
+		setTimeout(function(){
+			link.rel = "stylesheet";
+			link.media = "only x";
+		});
+		// also enable media after 3 seconds,
+		// which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+		setTimeout( enableStylesheet, 3000 );
+	};
+
+	// loop through link elements in DOM
+	rp.poly = function(){
+		// double check this to prevent external calls from running
+		if( rp.support() ){
+			return;
+		}
+		var links = w.document.getElementsByTagName( "link" );
+		for( var i = 0; i < links.length; i++ ){
+			var link = links[ i ];
+			// qualify links to those with rel=preload and as=style attrs
+			if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+				// prevent rerunning on link
+				link.setAttribute( "data-loadcss", true );
+				// bind listeners to toggle media back
+				rp.bindMediaToggle( link );
+			}
+		}
+	};
+
+	// if unsupported, run the polyfill
+	if( !rp.support() ){
+		// run once at least
+		rp.poly();
+
+		// rerun poly on an interval until onload
+		var run = w.setInterval( rp.poly, 500 );
+		if( w.addEventListener ){
+			w.addEventListener( "load", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		} else if( w.attachEvent ){
+			w.attachEvent( "onload", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		}
+	}
+
+
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ) );
+</script>
+
+    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" as="script">
+    <link rel="preload" href="/scripts/main.js" as="script">
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin="">
+    <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin="">
+    
+        <!-- algolia -->
+        <script>
+            
+            var hits = JSON.parse('{"per_page":10}')
+            var labels = JSON.parse('{"input_placeholder":"Search for Posts","hits_empty":"We did not find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}')
+
+            var algolia = {
+                applicationID: 'ZKGZPC2HRL',
+                apiKey: 'd14aa6ef670d284260dc375c7e565f5e',
+                indexName: 'hexo_search',
+                hits: hits,
+                labels: labels
+            }
+        </script>
+    
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+</head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/">Hua的公告板</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">MG相关micro RNA（2019-06-09）</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href="/">Hua的公告板</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style="
+
+
+
+
+
+
+
+height:50vh;
+">
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            MG相关micro RNA（2019-06-09）
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class="post-intro-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="MG">MG</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">1.9k</span>Reading time: <span class="post-count reading-time">10 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/06/09</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        
+    </div>
+</div>
+        <script>
+ 
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntros = document.getElementsByClassName('post-intros')[0]
+      if (postIntros) {
+        postIntros.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  function asyncErr(){
+    console.warn('script load from CDN failed, will load local script')
+  }
+
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (cb) { o.addEventListener('load', function (e) { cb(null, e); }, false); }
+    if (err) { o.addEventListener('error', function (e) { err(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  var asyncLoadWithFallBack = function(arr, success, reject) {
+      var currReject = function(){
+        reject()
+        arr.shift()
+        if(arr.length)
+          async(arr[0], success, currReject)
+        }
+
+      async(arr[0], success, currReject)
+  }
+
+  asyncLoadWithFallBack([
+    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", 
+    "https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js",
+    "/lib/webfontloader.min.js"
+  ], asyncCb, asyncErr)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="MG相关micro-RNA（2019-06-09）"><a href="#MG相关micro-RNA（2019-06-09）" class="headerlink" title="MG相关micro RNA（2019-06-09）"></a>MG相关micro RNA（2019-06-09）</h1><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><ul>
+<li>快速查阅一下MG的相关micro RNA，最特异的是不是Micro RNA 150p-5p和21-5p和let-7?</li>
+<li>这些microRNA是和T细胞还是B细胞相关？疾病的特异性能到啥程度？</li>
+</ul>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p><strong>【总结】</strong></p>
+<ul>
+<li>MG相关micro RNA的研究有两大类，一是对血样分析，二是对胸腺组织分析。而结论也有两个方向，前者偏向于micro RNA对炎症通路的影响，而后者偏向于micro RNA对胸腺发生发育的影响（以T细胞为主）。</li>
+</ul>
+<p><strong>【最特异的是不是Micro RNA 150p-5p和21-5p和let-7？疾病的特异性能到啥程度？】</strong></p>
+<ul>
+<li>Micro RNA 150p-5p可能是最特异的，它与AChR+ MG 临床症状+体内检测都相关联。21-5p支持的文献没有150p-5p多。let-7有MuSK+ MG的倾向。</li>
+<li>若深入进去看文献，可以发现micro RNA的特异性能用其调控机制解释。miR-150-5p对胸腺的影响导致其与胸腺增生、胸腺瘤MG相关。miR-21-5p因和prednisone 用量相关，故推测其机制为炎症通路调控。let家族的MUSK MG倾向原因未知。</li>
+<li><u>故疾病的特异性能细化到MG的内部几种分型</u>。目前文献最支持的是miR-150-5p与胸腺增生的（EOMG）的关系。</li>
+<li>若是Micro RNA 与MG分型的量化特异性差异则需要做Meta了</li>
+</ul>
+<p><strong>【这些microRNA是和T细胞还是B细胞相关？】</strong></p>
+<ul>
+<li>这些microRNA与T、B都相关，但以T细胞为主。</li>
+</ul>
+<h2 id="整理"><a href="#整理" class="headerlink" title="整理"></a>整理</h2><p>表格详见：<a href="https://docs.qq.com/sheet/DWlRGV1NMT3JTRkFv?preview_token=&amp;coord=E7%24E7%246%240%243%240&amp;tab=BB08J2" target="_blank" rel="noopener">https://docs.qq.com/sheet/DWlRGV1NMT3JTRkFv?preview_token=&amp;coord=E7%24E7%246%240%243%240&amp;tab=BB08J2</a></p>
+<p><img src="https://raw.githubusercontent.com/Cpresident/egee/master/20190609163621.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/Cpresident/egee/master/20190609163650.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/Cpresident/egee/master/20190609163715.png" alt=""></p>
+<h2 id="详细"><a href="#详细" class="headerlink" title="详细"></a>详细</h2><h3 id="最特异的是不是Micro-RNA-150p-5p和21-5p和let-7？疾病的特异性能到啥程度？"><a href="#最特异的是不是Micro-RNA-150p-5p和21-5p和let-7？疾病的特异性能到啥程度？" class="headerlink" title="最特异的是不是Micro RNA 150p-5p和21-5p和let-7？疾病的特异性能到啥程度？"></a>最特异的是不是Micro RNA 150p-5p和21-5p和let-7？疾病的特异性能到啥程度？</h3><h4 id="Circulating-microRNAs-as-potential-biomarkers-in-myasthenia-gravis-patients"><a href="#Circulating-microRNAs-as-potential-biomarkers-in-myasthenia-gravis-patients" class="headerlink" title="Circulating microRNAs as potential biomarkers in myasthenia gravis patients."></a>Circulating microRNAs as potential biomarkers in myasthenia gravis patients.</h4><blockquote>
+<p>综述</p>
+</blockquote>
+<ul>
+<li>Recent studies in AChR+ MG revealed elevated levels of the immuno-miRNAs miR-150-5p and miR-21-5p. Of particular importance, levels of miR-150-5p were lower in immunosuppressed patients and in patients with clinical improvement following thymectomy. </li>
+<li>In MuSK+ MG, another profile of circulating miRNAs was found, including upregulation of the let-7 family of miRNAs. </li>
+<li><p>Of particular importance, levels of miR-150-5p were lower in immunosuppressed patients and in patients with clinical improvement following thymectomy. In MuSK+ MG, another profile of circulating miRNAs was found, including upregulation of the let-7 family of miRNAs.</p>
+<h4 id="Thymectomy-lowers-the-myasthenia-gravis-biomarker-miR-150-5p"><a href="#Thymectomy-lowers-the-myasthenia-gravis-biomarker-miR-150-5p" class="headerlink" title="Thymectomy lowers the myasthenia gravis biomarker miR-150-5p."></a>Thymectomy lowers the myasthenia gravis biomarker miR-150-5p.</h4></li>
+</ul>
+<blockquote>
+<p>本试验测了两个marker（miR-150-5p and miR-21-5p），Thymectomy 只降低了 miR-150-5p，但prednisone 剂量却与miR-21-5p相关</p>
+</blockquote>
+<ul>
+<li>Levels of miR-21-5p displayed a negative correlation with the prednisone dose within the prednisone-only group (p ≤ 0.001).</li>
+<li>Patients treated with thymectomy had lower levels of miR-150-5p at 24 months, both compared with baseline values (p = 0.0011) and the prednisone group (p = 0.04). </li>
+</ul>
+<h4 id="Causes-and-Consequences-of-miR-150-5p-Dysregulation-in-Myasthenia-Gravis"><a href="#Causes-and-Consequences-of-miR-150-5p-Dysregulation-in-Myasthenia-Gravis" class="headerlink" title="Causes and Consequences of miR-150-5p Dysregulation in Myasthenia Gravis."></a>Causes and Consequences of miR-150-5p Dysregulation in Myasthenia Gravis.</h4><blockquote>
+<p>miR-150–5p与胸腺增生相关</p>
+</blockquote>
+<ul>
+<li>Increased expression of miR-150–5p associated with thymic hyperplasia in MG.<br><img src="https://raw.githubusercontent.com/Cpresident/egee/master/20190609165314.png" alt=""></li>
+</ul>
+<h3 id="T细胞还是B细胞相关？"><a href="#T细胞还是B细胞相关？" class="headerlink" title="T细胞还是B细胞相关？"></a>T细胞还是B细胞相关？</h3><h4 id="Causes-and-Consequences-of-miR-150-5p-Dysregulation-in-Myasthenia-Gravis-1"><a href="#Causes-and-Consequences-of-miR-150-5p-Dysregulation-in-Myasthenia-Gravis-1" class="headerlink" title="Causes and Consequences of miR-150-5p Dysregulation in Myasthenia Gravis."></a>Causes and Consequences of miR-150-5p Dysregulation in Myasthenia Gravis.</h4><blockquote>
+<p>假说：CD4+ T cells释放的miR-150-5p对循环的PBMCs产生影响</p>
+</blockquote>
+<ul>
+<li><p><strong>【疾病的特异性】</strong>The microRNA miR-150-5p has been previously characterized as a biomarker in MG due to its increase in the serum of patients and its decrease after thymectomy, correlated with an improvement of symptoms. </p>
+</li>
+<li><p>Here, we investigated the causes and consequences of the miR-150 increase in the serum of early-onset MG patients. We observed that miR-150 expression was upregulated in MG thymuses in correlation with the presence of thymic B cells and showed by in situ hybridization experiments, that miR-150 was mainly expressed by cells of the mantle zone of GCs. </p>
+</li>
+<li><strong>【T细胞还是B细胞相关】</strong><u>We observed that miR-150 was down-regulated, especially in CD4+ T cells compared to controls.</u> (These results suggest that the increased serum levels of miR-150 could result from a release from activated peripheral CD4+ T cells.)</li>
+</ul>
+<h4 id="Immature-Exosomes-Derived-from-MicroRNA-146a-Overexpressing-Dendritic-Cells-Act-as-Antigen-Specific-Therapy-for-Myasthenia-Gravis"><a href="#Immature-Exosomes-Derived-from-MicroRNA-146a-Overexpressing-Dendritic-Cells-Act-as-Antigen-Specific-Therapy-for-Myasthenia-Gravis" class="headerlink" title="Immature Exosomes Derived from MicroRNA-146a Overexpressing Dendritic Cells Act as Antigen-Specific Therapy for Myasthenia Gravis."></a>Immature Exosomes Derived from MicroRNA-146a Overexpressing Dendritic Cells Act as Antigen-Specific Therapy for Myasthenia Gravis.</h4><blockquote>
+<p>EAMG中的<strong>microRNA</strong>-146a可以影响 T helper cell profiles</p>
+</blockquote>
+<ul>
+<li>【T细胞还是B细胞相关】Results showed that exosomes from microRNA-146a overexpressing DCs expressed decreased levels of CD80 and CD86. In experimental autoimmune MG, exosomes from microRNA-146a overexpressing DCs suppressed ongoing clinical MG in mice and altered T helper cell profiles from Th1/Th17 to Th2/Treg both in serum and spleen, and the therapeutic effects of those exosomes were antigen-specific and partly dose dependent. A</li>
+</ul>
+<h4 id="Myasthenia-gravis-from-autoantibodies-to-therapy"><a href="#Myasthenia-gravis-from-autoantibodies-to-therapy" class="headerlink" title="Myasthenia gravis: from autoantibodies to therapy."></a>Myasthenia gravis: from autoantibodies to therapy.</h4><blockquote>
+<p>综述</p>
+</blockquote>
+<ul>
+<li>MicroRNAs (miRNAs), key gene expression regulators, play a role in autoimmune disorders via modulation of innate and adaptive immunity [34]. Their dysregulation might underlie pathological changes occurring in hyperplastic myasthenia gravis thymus as recently highlighted by Cron et al. [35], who observed a down-regulation of miR-7<br>and an up-regulation of miR-125, targeting the germinal centre-related CCL21 and Foxp3, respectively [35]. Another study showed a miR-548k downregulation in hyperplastic myasthenia gravis thymuses and its ability to regulate B-cell-attracting chemokine CXCL13 expression [36], further supporting miRNA contribution to intra-thymic myasthenia gravis pathogenesis.</li>
+</ul>
+<h4 id="miR-20b-Inhibits-T-Cell-Proliferation-and-Activation-via-NFAT-Signaling-Pathway-in-Thymoma-Associated-Myasthenia-Gravis"><a href="#miR-20b-Inhibits-T-Cell-Proliferation-and-Activation-via-NFAT-Signaling-Pathway-in-Thymoma-Associated-Myasthenia-Gravis" class="headerlink" title="miR-20b Inhibits T Cell Proliferation and Activation via NFAT Signaling Pathway in Thymoma-Associated Myasthenia Gravis."></a>miR-20b Inhibits T Cell Proliferation and Activation via NFAT Signaling Pathway in Thymoma-Associated Myasthenia Gravis.</h4><blockquote>
+<p>miR-20b抑制了Thymoma-Associated MG的T细胞增殖</p>
+</blockquote>
+<ul>
+<li>Expression of miR-20b was downregulated in samples of thymoma tissues and serum from patients with thymoma-associated myasthenia gravis. </li>
+<li>In addition, T cell proliferation and activation were inhibited by ectopic overexpression of miR-20b, which led to increased T cell proliferation and activation.</li>
+</ul>
+<h4 id="MiR-15a-contributes-abnormal-immune-response-in-myasthenia-gravis-by-targeting-CXCL10"><a href="#MiR-15a-contributes-abnormal-immune-response-in-myasthenia-gravis-by-targeting-CXCL10" class="headerlink" title="MiR-15a contributes abnormal immune response in myasthenia gravis by targeting CXCL10."></a>MiR-15a contributes abnormal immune response in myasthenia gravis by targeting CXCL10.</h4><blockquote>
+<p>MiR-15a通过CXCL10介导T细胞调控</p>
+</blockquote>
+<ul>
+<li>Increasing miR-15a expression could reduce CXCL10 expression and alleviate the abnormal T cells activation in immune response, while decreasing miR-15a expression could activate immune response abnormally. </li>
+<li>Take together, our data suggest that decreased miR-15a expression facilitates proinflammatory cytokines production and contributes to immune response at least in part via regulating CXCL10 expression in MG.</li>
+</ul>
+<h4 id="Aberrant-decrease-of-microRNA19b-regulates-TSLP-expression-and-contributes-to-Th17-cells-development-in-myasthenia-gravis-related-thymomas"><a href="#Aberrant-decrease-of-microRNA19b-regulates-TSLP-expression-and-contributes-to-Th17-cells-development-in-myasthenia-gravis-related-thymomas" class="headerlink" title="Aberrant decrease of microRNA19b regulates TSLP expression and contributes to Th17 cells development in myasthenia gravis related thymomas."></a>Aberrant decrease of microRNA19b regulates TSLP expression and contributes to Th17 cells development in myasthenia gravis related thymomas.</h4><blockquote>
+<p>microRNA-19b抑制 thymic stromal lymphopoietin (TSLP)表达来影响T细胞发育</p>
+</blockquote>
+<ul>
+<li>This study indicated that the elevation of microRNA-19b suppressed TSLP expression and then influenced T cell development in thymomatous MG.</li>
+</ul>
+<h4 id="Altered-let-7-expression-in-Myasthenia-gravis-and-let-7c-mediated-regulation-of-IL-10-by-directly-targeting-IL-10-in-Jurkat-cells"><a href="#Altered-let-7-expression-in-Myasthenia-gravis-and-let-7c-mediated-regulation-of-IL-10-by-directly-targeting-IL-10-in-Jurkat-cells" class="headerlink" title="Altered let-7 expression in Myasthenia gravis and let-7c mediated regulation of IL-10 by directly targeting IL-10 in Jurkat cells."></a>Altered let-7 expression in Myasthenia gravis and let-7c mediated regulation of IL-10 by directly targeting IL-10 in Jurkat cells.</h4><blockquote>
+<p> let-7c通过Jurkat cells (T细胞)影响IL-10</p>
+</blockquote>
+<ul>
+<li>Further experiments revealed that induced levels of IL-10 were inversely related to let-7c levels. </li>
+<li>We also showed that let-7c could regulate IL-10 expression in Jurkat cells.</li>
+</ul>
+<h4 id="Identification-of-novel-MicroRNA-signatures-linked-to-experimental-autoimmune-myasthenia-gravis-pathogenesis-down-regulated-miR-145-promotes-pathogenetic-Th17-cell-response"><a href="#Identification-of-novel-MicroRNA-signatures-linked-to-experimental-autoimmune-myasthenia-gravis-pathogenesis-down-regulated-miR-145-promotes-pathogenetic-Th17-cell-response" class="headerlink" title="Identification of novel MicroRNA signatures linked to experimental autoimmune myasthenia gravis pathogenesis: down-regulated miR-145 promotes pathogenetic Th17 cell response."></a>Identification of novel MicroRNA signatures linked to experimental autoimmune myasthenia gravis pathogenesis: down-regulated miR-145 promotes pathogenetic Th17 cell response.</h4><blockquote>
+<p>下调miR-145 增加Th17 cell response</p>
+</blockquote>
+<ul>
+<li>Down-regulation of miR-145 expression was confirmed in PBMC and CD4+CD25- T cells (T effector cells) from both EAMG rats and MG patients by real-time PCR. </li>
+<li>Finally, we observed that administration of lentiviral-miR-145 decreased the severity of ongoing, established EAMG with decreased IL-17 production, and also decreased serum anti-AChR IgG levels. </li>
+</ul>
+<h4 id="Silencing-miR-146a-influences-B-cells-and-ameliorates-experimental-autoimmune-myasthenia-gravis"><a href="#Silencing-miR-146a-influences-B-cells-and-ameliorates-experimental-autoimmune-myasthenia-gravis" class="headerlink" title="Silencing miR-146a influences B cells and ameliorates experimental autoimmune myasthenia gravis."></a>Silencing miR-146a influences B cells and ameliorates experimental autoimmune myasthenia gravis.</h4><blockquote>
+<p>miR-146a 调控MG的B细胞</p>
+</blockquote>
+<ul>
+<li><p>Our data also demonstrated that silencing miR-146a with its inhibitor AntagomiR-146a effectively ameliorated clinical myasthenic symptoms in mice with ongoing experimental autoimmune myasthenia gravis. </p>
+</li>
+<li><p>Furthermore, multiple defects were observed after miR-146a was knocked down in B cells, including decreased anti-R97-116 antibody production and class switching, reduced numbers of plasma cells, memory B cells and B-1 cells, and weakened activation of B cells. </p>
+</li>
+</ul>
+<h4 id="Delivery-of-an-miR155-inhibitor-by-anti-CD20-single-chain-antibody-into-B-cells-reduces-the-acetylcholine-receptor-specific-autoantibodies-and-ameliorates-experimental-autoimmune-myasthenia-gravis"><a href="#Delivery-of-an-miR155-inhibitor-by-anti-CD20-single-chain-antibody-into-B-cells-reduces-the-acetylcholine-receptor-specific-autoantibodies-and-ameliorates-experimental-autoimmune-myasthenia-gravis" class="headerlink" title="Delivery of an miR155 inhibitor by anti-CD20 single-chain antibody into B cells reduces the acetylcholine receptor-specific autoantibodies and ameliorates experimental autoimmune myasthenia gravis."></a>Delivery of an miR155 inhibitor by anti-CD20 single-chain antibody into B cells reduces the acetylcholine receptor-specific autoantibodies and ameliorates experimental autoimmune myasthenia gravis.</h4><blockquote>
+<p>抑制B细胞内的MicroRNA-155 可以减轻EAMG</p>
+</blockquote>
+<ul>
+<li>In this study, we observed up-regulation of miR155 in the peripheral blood mononuclear cells (PBMCs) of patients with myasthenia gravis (MG), and miR155 was also up-regulated in torpedo acetylcholine receptor (T-AChR)-stimulated B cells. </li>
+<li>Our results demonstrated that silencing of miR155 by its inhibitor impaired the B cell-activating factor (BAFF)-R-related signalling pathway and reduced the translocation of nuclear factor (NF)-κB into the nucleus.</li>
+<li>Additionally, AChR-specific autoantibodies were reduced, which may be related to the altered amounts of marginal zone B cells and memory B cells in the spleens of EAMG mice.</li>
+</ul>
+<h4 id="Altered-expression-of-miR-146a-in-myasthenia-gravis"><a href="#Altered-expression-of-miR-146a-in-myasthenia-gravis" class="headerlink" title="Altered expression of miR-146a in myasthenia gravis."></a>Altered expression of miR-146a in myasthenia gravis.</h4><blockquote>
+<p>miR-146a 与AchR specific B cells</p>
+</blockquote>
+<ul>
+<li>We conclude that abnormal expression/regulation of miR-146a may play an important role in the regulation of AchR specific B cells and contribute to the pathogenesis of MG.</li>
+</ul>
+<h3 id="micro-RNA影响炎症通路"><a href="#micro-RNA影响炎症通路" class="headerlink" title="micro RNA影响炎症通路"></a>micro RNA影响炎症通路</h3><h4 id="miR-15b-is-Downregulated-in-Myasthenia-Gravis-Patients-and-Directly-Regulates-the-Expression-of-Interleukin-15-IL-15-in-Experimental-Myasthenia-Gravis-Mice"><a href="#miR-15b-is-Downregulated-in-Myasthenia-Gravis-Patients-and-Directly-Regulates-the-Expression-of-Interleukin-15-IL-15-in-Experimental-Myasthenia-Gravis-Mice" class="headerlink" title="miR-15b is Downregulated in Myasthenia Gravis Patients and Directly Regulates the Expression of Interleukin-15 (IL-15) in Experimental Myasthenia Gravis Mice."></a>miR-15b is Downregulated in Myasthenia Gravis Patients and Directly Regulates the Expression of Interleukin-15 (IL-15) in Experimental Myasthenia Gravis Mice.</h4><blockquote>
+<p>miR-15b通过IL-15影响炎症反应</p>
+</blockquote>
+<ul>
+<li>we confirmed that miR-15b knockdown could increase IL-15 expression in healthy mice, while miR-15b overexpression could inhibit IL-15 expression in EAMG mice. </li>
+</ul>
+<h4 id="Decreased-microRNA-miR-181c-expression-in-peripheral-blood-mononuclear-cells-correlates-with-elevated-serum-levels-of-IL-7-and-IL-17-in-patients-with-myasthenia-gravis"><a href="#Decreased-microRNA-miR-181c-expression-in-peripheral-blood-mononuclear-cells-correlates-with-elevated-serum-levels-of-IL-7-and-IL-17-in-patients-with-myasthenia-gravis" class="headerlink" title="Decreased microRNA miR-181c expression in peripheral blood mononuclear cells correlates with elevated serum levels of IL-7 and IL-17 in patients with myasthenia gravis."></a>Decreased microRNA miR-181c expression in peripheral blood mononuclear cells correlates with elevated serum levels of IL-7 and IL-17 in patients with myasthenia gravis.</h4><h4 id="Disease-specific-signature-of-serum-miR-20b-and-its-targets-IL-8-and-IL-25-in-myasthenia-gravis-patients"><a href="#Disease-specific-signature-of-serum-miR-20b-and-its-targets-IL-8-and-IL-25-in-myasthenia-gravis-patients" class="headerlink" title="Disease-specific signature of serum miR-20b and its targets IL-8 and IL-25, in myasthenia gravis patients."></a>Disease-specific signature of serum miR-20b and its targets IL-8 and IL-25, in myasthenia gravis patients.</h4><blockquote>
+<p>miR-20b和QMGS关联（通过调控炎症因子IL-8 and IL-25）</p>
+</blockquote>
+<ul>
+<li>Here, we report that miR-20b, an immune- and cancer-related miRNA, is decreased in the serum of MG patients and correlates negatively with QMGSs in the pretreatment stage.</li>
+</ul>
+
+    </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>Author：<a href="https://cpresident.github.io">Hua</a>
+            </p><p>原文链接：<a href="https://cpresident.github.io/p/d463.html">https://cpresident.github.io/p/d463.html</a>
+            </p><p>发表日期：<a href="https://cpresident.github.io/p/d463.html">June 9th 2019, 5:08:00 pm</a>
+            </p><p>更新日期：<a href="https://cpresident.github.io/p/d463.html">June 9th 2019, 5:11:19 pm</a>
+            </p><p>版权声明：</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/p/9b9f.html" title="重症肌无力国内国外文献分析报告 （2019-5-18）">
+                    <div class="prevTitle">重症肌无力国内国外文献分析报告 （2019-5-18）</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:xvpresident@gmail.com" class="iconfont-archer email" title="email"></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <a href="//t.me/iiijhh" class="iconfont-archer telegram" target="_blank" title="telegram"></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <a href="/atom.xml" class="iconfont-archer rss" target="_blank" title="rss"></a>
+            
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+    <div class="busuanzi-container">
+    
+     
+    <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span> :)</span>
+    
+    </div>
+    
+</footer>
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MG相关micro-RNA（2019-06-09）"><span class="toc-number">1.</span> <span class="toc-text">MG相关micro RNA（2019-06-09）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#目标"><span class="toc-number">1.1.</span> <span class="toc-text">目标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结论"><span class="toc-number">1.2.</span> <span class="toc-text">结论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#整理"><span class="toc-number">1.3.</span> <span class="toc-text">整理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#详细"><span class="toc-number">1.4.</span> <span class="toc-text">详细</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#最特异的是不是Micro-RNA-150p-5p和21-5p和let-7？疾病的特异性能到啥程度？"><span class="toc-number">1.4.1.</span> <span class="toc-text">最特异的是不是Micro RNA 150p-5p和21-5p和let-7？疾病的特异性能到啥程度？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Circulating-microRNAs-as-potential-biomarkers-in-myasthenia-gravis-patients"><span class="toc-number">1.4.1.1.</span> <span class="toc-text">Circulating microRNAs as potential biomarkers in myasthenia gravis patients.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Thymectomy-lowers-the-myasthenia-gravis-biomarker-miR-150-5p"><span class="toc-number">1.4.1.2.</span> <span class="toc-text">Thymectomy lowers the myasthenia gravis biomarker miR-150-5p.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Causes-and-Consequences-of-miR-150-5p-Dysregulation-in-Myasthenia-Gravis"><span class="toc-number">1.4.1.3.</span> <span class="toc-text">Causes and Consequences of miR-150-5p Dysregulation in Myasthenia Gravis.</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#T细胞还是B细胞相关？"><span class="toc-number">1.4.2.</span> <span class="toc-text">T细胞还是B细胞相关？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Causes-and-Consequences-of-miR-150-5p-Dysregulation-in-Myasthenia-Gravis-1"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">Causes and Consequences of miR-150-5p Dysregulation in Myasthenia Gravis.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Immature-Exosomes-Derived-from-MicroRNA-146a-Overexpressing-Dendritic-Cells-Act-as-Antigen-Specific-Therapy-for-Myasthenia-Gravis"><span class="toc-number">1.4.2.2.</span> <span class="toc-text">Immature Exosomes Derived from MicroRNA-146a Overexpressing Dendritic Cells Act as Antigen-Specific Therapy for Myasthenia Gravis.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Myasthenia-gravis-from-autoantibodies-to-therapy"><span class="toc-number">1.4.2.3.</span> <span class="toc-text">Myasthenia gravis: from autoantibodies to therapy.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#miR-20b-Inhibits-T-Cell-Proliferation-and-Activation-via-NFAT-Signaling-Pathway-in-Thymoma-Associated-Myasthenia-Gravis"><span class="toc-number">1.4.2.4.</span> <span class="toc-text">miR-20b Inhibits T Cell Proliferation and Activation via NFAT Signaling Pathway in Thymoma-Associated Myasthenia Gravis.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MiR-15a-contributes-abnormal-immune-response-in-myasthenia-gravis-by-targeting-CXCL10"><span class="toc-number">1.4.2.5.</span> <span class="toc-text">MiR-15a contributes abnormal immune response in myasthenia gravis by targeting CXCL10.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Aberrant-decrease-of-microRNA19b-regulates-TSLP-expression-and-contributes-to-Th17-cells-development-in-myasthenia-gravis-related-thymomas"><span class="toc-number">1.4.2.6.</span> <span class="toc-text">Aberrant decrease of microRNA19b regulates TSLP expression and contributes to Th17 cells development in myasthenia gravis related thymomas.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Altered-let-7-expression-in-Myasthenia-gravis-and-let-7c-mediated-regulation-of-IL-10-by-directly-targeting-IL-10-in-Jurkat-cells"><span class="toc-number">1.4.2.7.</span> <span class="toc-text">Altered let-7 expression in Myasthenia gravis and let-7c mediated regulation of IL-10 by directly targeting IL-10 in Jurkat cells.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Identification-of-novel-MicroRNA-signatures-linked-to-experimental-autoimmune-myasthenia-gravis-pathogenesis-down-regulated-miR-145-promotes-pathogenetic-Th17-cell-response"><span class="toc-number">1.4.2.8.</span> <span class="toc-text">Identification of novel MicroRNA signatures linked to experimental autoimmune myasthenia gravis pathogenesis: down-regulated miR-145 promotes pathogenetic Th17 cell response.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Silencing-miR-146a-influences-B-cells-and-ameliorates-experimental-autoimmune-myasthenia-gravis"><span class="toc-number">1.4.2.9.</span> <span class="toc-text">Silencing miR-146a influences B cells and ameliorates experimental autoimmune myasthenia gravis.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Delivery-of-an-miR155-inhibitor-by-anti-CD20-single-chain-antibody-into-B-cells-reduces-the-acetylcholine-receptor-specific-autoantibodies-and-ameliorates-experimental-autoimmune-myasthenia-gravis"><span class="toc-number">1.4.2.10.</span> <span class="toc-text">Delivery of an miR155 inhibitor by anti-CD20 single-chain antibody into B cells reduces the acetylcholine receptor-specific autoantibodies and ameliorates experimental autoimmune myasthenia gravis.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Altered-expression-of-miR-146a-in-myasthenia-gravis"><span class="toc-number">1.4.2.11.</span> <span class="toc-text">Altered expression of miR-146a in myasthenia gravis.</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#micro-RNA影响炎症通路"><span class="toc-number">1.4.3.</span> <span class="toc-text">micro RNA影响炎症通路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#miR-15b-is-Downregulated-in-Myasthenia-Gravis-Patients-and-Directly-Regulates-the-Expression-of-Interleukin-15-IL-15-in-Experimental-Myasthenia-Gravis-Mice"><span class="toc-number">1.4.3.1.</span> <span class="toc-text">miR-15b is Downregulated in Myasthenia Gravis Patients and Directly Regulates the Expression of Interleukin-15 (IL-15) in Experimental Myasthenia Gravis Mice.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Decreased-microRNA-miR-181c-expression-in-peripheral-blood-mononuclear-cells-correlates-with-elevated-serum-levels-of-IL-7-and-IL-17-in-patients-with-myasthenia-gravis"><span class="toc-number">1.4.3.2.</span> <span class="toc-text">Decreased microRNA miR-181c expression in peripheral blood mononuclear cells correlates with elevated serum levels of IL-7 and IL-17 in patients with myasthenia gravis.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Disease-specific-signature-of-serum-miR-20b-and-its-targets-IL-8-and-IL-25-in-myasthenia-gravis-patients"><span class="toc-number">1.4.3.3.</span> <span class="toc-text">Disease-specific signature of serum miR-20b and its targets IL-8 and IL-25, in myasthenia gravis patients.</span></a></li></ol></li></ol></li></ol></li></ol>
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 16
+        </div>
+        <!-- search  -->
+        
+            <div class="site-search popup-trigger">
+                <span class="iconfont-archer search-icon">&#xe627;</span>
+            </div>
+        
+    </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2019 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/09</span><a class="archive-post-title" href="/p/d463.html">MG相关micro RNA（2019-06-09）</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/18</span><a class="archive-post-title" href="/p/9b9f.html">重症肌无力国内国外文献分析报告 （2019-5-18）</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/27</span><a class="archive-post-title" href="/p/a0b7.html">神经免疫类与外周血T淋巴细胞研究套路</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/17</span><a class="archive-post-title" href="/p/ef21.html">TCM和TEM</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/18</span><a class="archive-post-title" href="/p/94c7.html">HLA in Myasthenia gravis【稿4】报告</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/14</span><a class="archive-post-title" href="/p/5848.html">HLA in Myasthenia gravis【V4.5.1】报告</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/12</span><a class="archive-post-title" href="/p/8e00.html">HLA in Myasthenia gravis【V4.5】报告</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/08</span><a class="archive-post-title" href="/p/3563.html">HLA in Myasthenia gravis【稿3】插图及表格</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/04</span><a class="archive-post-title" href="/p/35ac.html">GCSRT课程</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/04</span><a class="archive-post-title" href="/p/4e76.html">HLA in Myasthenia gravis【稿3】报告</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/02</span><a class="archive-post-title" href="/p/b5c6.html">Treg cell的发生发展</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/22</span><a class="archive-post-title" href="/p/e83a.html">HLA in Myasthenia gravis 【稿2】 报告</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/18</span><a class="archive-post-title" href="/p/2d4a.html">HLA in Myasthenia gravis 【Meta可行性分析】</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/15</span><a class="archive-post-title" href="/p/ac35.html">HLA in Myasthenia gravis 【稿1】 报告</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2018 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/31</span><a class="archive-post-title" href="/p/3d25.html">HLA and Myasthenia gravis【R环境下Biblioshiny分析报告】</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/28</span><a class="archive-post-title" href="/p/e9d9.html">BCR is the New Antibody, TCR is still a T Cell Receptor</a>
+        </li>
+    
+    </ul></div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="MG"><span class="iconfont-archer">&#xe606;</span>MG</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br>
+    1、请确保node版本大于6.2<br>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+        <span class="sidebar-category-name" data-categories="PP"><span class="iconfont-archer">&#xe60a;</span>PP</span>
+    
+        <span class="sidebar-category-name" data-categories="OA"><span class="iconfont-archer">&#xe60a;</span>OA</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: "/",
+        author: "Hua"
+    }
+</script>
+    <!-- CDN failover -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ === 'undefined')
+        {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/lib/jquery.min.js">\x3C/script>')
+        }
+    </script>
+    <script src="/scripts/main.js"></script>
+    <!-- algolia -->
+    
+        <div class="site-search">
+  <div class="algolia-popup popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="iconfont-archer">&#xe609;</i>
+    </span>
+  </div>
+</div>
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.0/dist/instantsearch.min.js" defer></script>
+        <script src="/scripts/search.js" defer></script>
+    
+    <!-- busuanzi  -->
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+     
+    </body>
+</html>
+
+
